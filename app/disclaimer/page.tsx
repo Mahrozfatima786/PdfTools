@@ -271,7 +271,8 @@ export default function DisclaimerPage() {
             fontWeight: 600,
           }}
         >
-          Pdfconvertor@gmail.com
+         Pdfconvertor77@gmail.com
+
         </Typography>
 
         <Typography>

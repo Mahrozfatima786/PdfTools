@@ -240,7 +240,7 @@ export default function TermsPage() {
             </Typography>
 
             <Typography>
-              Email: pdfconvertor@gmail.com
+              Email: Pdfconvertor77@gmail.com
             </Typography>
 
             <Typography>

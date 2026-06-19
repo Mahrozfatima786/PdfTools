@@ -45,7 +45,10 @@ export default function TermsPage() {
 
             <Typography
               variant="h3"
-              fontWeight="bold"
+              sx={{
+                              fontWeight:"bold"
+
+              }}
               gutterBottom
             >
               Terms & Conditions
@@ -56,10 +59,10 @@ export default function TermsPage() {
             </Typography>
           </Box>
 
-          <Box mb={4}>
+          <Box sx={{mb:4}} >
             <Typography
               variant="h5"
-              fontWeight="bold"
+                   sx={{fontWeight:"bold"}}
               gutterBottom
             >
               <DescriptionIcon
@@ -80,10 +83,10 @@ export default function TermsPage() {
             </Typography>
           </Box>
 
-          <Box mb={4}>
+          <Box  sx={{mb:4}} >
             <Typography
               variant="h5"
-              fontWeight="bold"
+               sx={{fontWeight:"bold"}}
               gutterBottom
             >
               <SecurityIcon
@@ -119,10 +122,10 @@ export default function TermsPage() {
             </ul>
           </Box>
 
-          <Box mb={4}>
+          <Box  sx={{mb:4}} >
             <Typography
               variant="h5"
-              fontWeight="bold"
+             sx={{fontWeight:"bold"}}
               gutterBottom
             >
               <CopyrightIcon
@@ -142,10 +145,10 @@ export default function TermsPage() {
             </Typography>
           </Box>
 
-          <Box mb={4}>
+          <Box sx={{mb:4}} >
             <Typography
               variant="h5"
-              fontWeight="bold"
+              sx={{fontWeight:"bold"}}
               gutterBottom
             >
               <WarningAmberIcon
@@ -167,10 +170,10 @@ export default function TermsPage() {
             </Typography>
           </Box>
 
-          <Box mb={4}>
+          <Box sx={{mb:4}}>
             <Typography
               variant="h5"
-              fontWeight="bold"
+              sx={{fontWeight:"bold"}}
               gutterBottom
             >
               Account & Security
@@ -186,10 +189,10 @@ export default function TermsPage() {
             </Typography>
           </Box>
 
-          <Box mb={4}>
+          <Box  sx={{mb:4}} >
             <Typography
               variant="h5"
-              fontWeight="bold"
+               sx={{fontWeight:"bold"}}
               gutterBottom
             >
               Service Availability
@@ -202,10 +205,10 @@ export default function TermsPage() {
             </Typography>
           </Box>
 
-          <Box mb={4}>
+          <Box  sx={{mb:4}} >
             <Typography
               variant="h5"
-              fontWeight="bold"
+             sx={{fontWeight:"bold"}}
               gutterBottom
             >
               Changes to Terms

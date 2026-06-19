@@ -12,10 +12,15 @@ export default async function rotatePDF(file: File, angle = 90) {
   });
 
   const rotatedBytes = await pdfDoc.save();
-
-  const blob = new Blob([rotatedBytes], {
+const blob = new Blob(
+  [rotatedBytes as unknown as BlobPart],
+  {
     type: 'application/pdf',
-  });
+  }
+);
+  // const blob = new Blob([rotatedBytes], {
+  //   type: 'application/pdf',
+  // });
 
   const url = URL.createObjectURL(blob);
 

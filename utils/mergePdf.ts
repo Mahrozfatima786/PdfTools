@@ -35,13 +35,24 @@ export default async function mergePDF(
 
   const mergedBytes =
     await mergedPdf.save();
-
-  const blob = new Blob(
-    [mergedBytes],
-    {
-      type: 'application/pdf',
-    }
-  );
+const blob = new Blob(
+  [
+    mergedBytes.buffer.slice(
+      mergedBytes.byteOffset,
+      mergedBytes.byteOffset +
+        mergedBytes.byteLength
+    ) as ArrayBuffer,
+  ],
+  {
+    type: 'application/pdf',
+  }
+);
+  // const blob = new Blob(
+  //   [mergedBytes],
+  //   {
+  //     type: 'application/pdf',
+  //   }
+  // );
 
   const url =
     URL.createObjectURL(blob);

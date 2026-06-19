@@ -118,11 +118,15 @@ export default async function pdfToJpg(
 
     canvas.width = viewport.width;
     canvas.height = viewport.height;
-
-    await page.render({
-      canvasContext: context,
-      viewport,
-    }).promise;
+await page.render({
+  canvas: canvas,
+  canvasContext: context,
+  viewport,
+}).promise;
+    // await page.render({
+    //   canvasContext: context,
+    //   viewport,
+    // }).promise;
 
     const blob =
       await new Promise<Blob | null>(

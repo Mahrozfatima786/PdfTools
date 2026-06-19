@@ -152,13 +152,21 @@ function downloadFile(
   fileName: string,
   mimeType: string
 ) {
-  const blob =
-    data instanceof Blob
-      ? data
-      : new Blob([data], {
+const blob =
+  data instanceof Blob
+    ? data
+    : new Blob(
+        [
+          new Uint8Array(
+            data.buffer as ArrayBuffer,
+            data.byteOffset,
+            data.byteLength
+          ),
+        ],
+        {
           type: mimeType,
-        });
-
+        }
+      );
   const url =
     URL.createObjectURL(blob);
 

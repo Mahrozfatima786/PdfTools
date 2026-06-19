@@ -34,7 +34,7 @@ export default function ContactPage() {
 
         <Typography
           variant="h3"
-          fontWeight="bold"
+          sx={{fontWeight:"bold"}}
         >
           Contact Us
         </Typography>
@@ -76,7 +76,7 @@ export default function ContactPage() {
 
             <Typography
               variant="h6"
-              fontWeight="bold"
+              sx={{fontWeight:"bold"}}
             >
               Email Support
             </Typography>
@@ -110,7 +110,7 @@ export default function ContactPage() {
 
             <Typography
               variant="h6"
-              fontWeight="bold"
+               sx={{fontWeight:"bold"}}
             >
               Phone Support
             </Typography>
@@ -144,7 +144,7 @@ export default function ContactPage() {
 
             <Typography
               variant="h6"
-              fontWeight="bold"
+               sx={{fontWeight:"bold"}}
             >
               Support Hours
             </Typography>
@@ -182,7 +182,7 @@ export default function ContactPage() {
 
         <Typography
           variant="h4"
-          fontWeight="bold"
+        sx={{fontWeight:"bold"}}
           gutterBottom
         >
           We're Here To Help
